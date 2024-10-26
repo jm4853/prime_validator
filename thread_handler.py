@@ -24,7 +24,8 @@ num_procs = 5
 procs = []
 
 for i in range(num_procs):
-    procs[i] = subprocess.
+    
+    procs.append(subprocess.Popen(cmd_str_i.split(), stdout=subprocess.PIPE))
 
 
 proc = subprocess.Popen(cmd_str.split(), stdout=subprocess.PIPE)
